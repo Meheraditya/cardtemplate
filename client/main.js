@@ -22,12 +22,40 @@
 // });
 
 $(document).ready(function(){
-    $(".card").mouseover(function(){
-        var $this = this;
-        $('.card').css({'box-shadow': '10px 10px 10px black', "transform": "translate(0,-3%)", 'transition' :'transform 1s'});
-    })
-    $(".card").mouseout(function(){
-        var $this = this;
-        $('.card').css({'box-shadow': '2px 2px 2px 1px gainsboro', "transform": "translate(0%,0%)", 'transition' :'transform 1s'});
-    })
+    $(".card1").mouseover(function(){
+        $('.card1').css({'box-shadow': '10px 10px 10px gainsboro', "transform": "translate(0,-3%)", 'transition' :'transform 1s'});
+    });
+    $(".card1").mouseout(function(){
+        $('.card1').css({'box-shadow': '2px 2px 2px 1px gainsboro', "transform": "translate(0%,0%)", 'transition' :'transform 1s'});
+    });
+    $(".card2").mouseover(function(){
+        $('.card2').css({'box-shadow': '10px 10px 10px gainsboro', "transform": "translate(0,-3%)", 'transition' :'transform 1s'});
+    });
+    $(".card2").mouseout(function(){
+        $('.card2').css({'box-shadow': '2px 2px 2px 1px gainsboro', "transform": "translate(0%,0%)", 'transition' :'transform 1s'});
+    });
+    $(".card3").mouseover(function(){
+        $('.card3').css({'box-shadow': '10px 10px 10px gainsboro', "transform": "translate(0,-3%)", 'transition' :'transform 1s'});
+    });
+    $(".card3").mouseout(function(){
+        $('.card3').css({'box-shadow': '2px 2px 2px 1px gainsboro', "transform": "translate(0%,0%)", 'transition' :'transform 1s'});
+    });
+    $(".card4").mouseover(function(){
+        $('.card4').css({'box-shadow': '10px 10px 10px gainsboro', "transform": "translate(0,-3%)", 'transition' :'transform 1s'});
+    });
+    $(".card4").mouseout(function(){
+        $('.card4').css({'box-shadow': '2px 2px 2px 1px gainsboro', "transform": "translate(0%,0%)", 'transition' :'transform 1s'});
+    });
+    $(".card5").mouseover(function(){
+        $('.card5').css({'box-shadow': '10px 10px 10px gainsboro', "transform": "translate(0,-3%)", 'transition' :'transform 1s'});
+    });
+    $(".card5").mouseout(function(){
+        $('.card5').css({'box-shadow': '2px 2px 2px 1px gainsboro', "transform": "translate(0%,0%)", 'transition' :'transform 1s'});
+    });
+    $(".card6").mouseover(function(){
+        $('.card6').css({'box-shadow': '10px 10px 10px gainsboro', "transform": "translate(0,-3%)", 'transition' :'transform 1s'});
+    });
+    $(".card6").mouseout(function(){
+        $('.card6').css({'box-shadow': '2px 2px 2px 1px gainsboro', "transform": "translate(0%,0%)", 'transition' :'transform 1s'});
+    });
 });
