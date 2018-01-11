@@ -1,0 +1,102 @@
+<template name="profile">
+    <div class="profile-block">
+        <div class="department-block">
+            <div class="department">
+                <div class="depart-head">Create Department</div>
+                <div class="depart-button">
+                    <span><b>B</b></span>
+                </div>
+            </div>
+            <div class="depart-form-div">
+                <form class="depart-form">
+                    <div class="depart-name depart-form-field">
+                        <div class="depart-in-name">Department Name</div>
+                        <input type="text" name="departmentName" />                        
+                    </div>
+                    <div class="display-name depart-form-field">
+                        <div class="display-in-name">Display Name</div>
+                            <input type="text" name="displayName" />                        
+                    </div>
+                    <div class="about depart-form-field">
+                        <div class="about-textarea">About</div>
+                        <textarea name="about" rows="4" cols="50"></textarea>                        
+                    </div>
+                    <div class="status depart-form-field depart-switch-field">
+                        <div class="switch-div">
+                            <div class="status-switch-label">Status</div>                      
+                            <div class="switch status-switch"></div>
+                            <input type="checkbox" name="checkboxName" class="checkbox"/>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="assign-block">
+                <div class="assign-head-block">
+                    <div class="assign-head">Assign</div>
+                    <div class="assign-head-add">
+                        <span>+</span>
+                    </div>
+                </div>
+                <div class="assign-form-block">
+                    <form class="assign-form">
+                        <div class="group select-common">                                                         
+                            <select class="select-group assign-select-in assign-field-color" name="select1-name">                                                               
+                                <option></option>
+                                <option value="select1">select1</option>
+                                <option value="select2">select2</option>
+                            </select>
+                            <div class="assign-select1-div assign-field-color">Select Group</div>
+                        </div>
+                        <div class="corporate select-common">                             
+                            <select class="select-corporate assign-select-in assign-field-color" name="select2-name">
+                                <option></option>
+                                <option value="select1">select1</option>
+                                <option value="select2">select2</option>
+                            </select>
+                            <div class="assign-select2-div assign-field-color">Select Corporate</div>
+                        </div>
+                        <div class="company select-common">                            
+                            <select class="select-company assign-select-in assign-field-color" name="select3-name">
+                                <option></option>
+                                <option value="select1">select1</option>
+                                <option value="select2">select2</option>
+                            </select>
+                            <div class="assign-select3-div assign-field-color">Select Company</div> 
+                        </div>
+                        <div class="division select-common">                            
+                            <select class="select-division assign-select-in assign-field-color" name="select4-name">
+                                <option></option>
+                                <option value="select1">select1</option>
+                                <option value="select2">select2</option>
+                            </select>
+                            <div class="assign-select4-div assign-field-color">Select Division</div> 
+                        </div>
+                        <div class="branch select-common">                             
+                            <select class="select-branch assign-select-in assign-field-color" name="select5-name">
+                                <option></option>
+                                <option value="select1">select1</option>
+                                <option value="select2">select2</option>
+                            </select>
+                            <div class="assign-select5-div assign-field-color">Select Branch</div>
+                        </div>
+                        <div class="email select-common">                             
+                            <input class="email-in" type="email" name="emailName"/>                          
+                            <div class="email-label assign-field-color">Email Id</div>
+                        </div>
+                        <div class="cb-email-div">
+                            <input  type="checkbox" name="cb-email" value="">
+                            <div class="assign-field-color">Notify</div>
+                        </div>  
+                        <div class="assign-switch-div">
+                            <div class="assign-switch">
+                                <div class="assign-field-color assign-status">Status</div>                      
+                                <div class="switch data-switch"></div>
+                                <input type="checkbox" name="checkboxName" class="checkbox"/>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>       
+    </div>
+</template>
