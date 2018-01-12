@@ -233,7 +233,7 @@ Meteor.startup(function () {
             }
 
             function checkInputAndRemoveCss(inputVal, className) {
-                if(inputVal.length == 0) {
+                if(inputVal && inputVal.length == 0) {
                     $(className).css(removePofileDepartmentCss());
                 }
             }
