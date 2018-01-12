@@ -8,3 +8,8 @@ Router.route('/profile', {
     layoutTemplate: "mainLayout"
 });
 
+Router.route('/metadata', {
+    name: "metaData",
+    layoutTemplate: "mainLayout"
+});
+
