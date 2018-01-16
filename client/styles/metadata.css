@@ -1,0 +1,264 @@
+.meta-header-block {
+    color: #EF4647;
+    border-bottom: 2px solid #EDECEC;
+}
+
+.meta-head {
+    padding: 11px 0;
+    font-size: 20px;
+    text-align: left;
+    display: inline-block;
+}
+
+.meta-button {
+    width: 50px;
+    height: 50px;
+    background-color: #EF4647;
+    border-radius: 100%;
+    float: right;
+    text-align: center;
+}
+
+.meta-button>span {
+    color: white;
+    line-height: 2.5;
+    font-size: 20px;
+}
+
+/*********************************logo**********************************/
+
+.meta-logo-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.logo-common-block {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo-common {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #627DAE;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.logo-border {
+    border-bottom: 2px solid #627DAE;
+    width: 25px;
+    height: 25px;
+}
+
+.logo-symbol {
+    font-family: monospace;
+    font-size: 20px;
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-title {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #627DAE;
+}
+
+/******************************************meta-field-main-block************************/
+
+.meta-field-main-block {
+    margin-top: 40px;
+}
+
+.meta-field-left-block {
+    width: 49%;
+    height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-left: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.left-field-common {
+    width: 99%;
+    position: relative;
+    padding-top: 20px;
+    margin: 20px 0px;
+}
+
+.left-field-common>input {
+    width: 100%;
+    position: absolute;
+    bottom: left;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #627DAE;
+}
+
+.calender {
+    position: absolute;
+    right: 0;
+}
+
+.business>.business-type {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 200px;
+    border: 1px solid grey;
+    border-bottom: none;
+    overflow: auto;
+    overflow-x: hidden;
+    bottom: 18px;
+}
+
+.business>.business-type>.business-options {
+    padding: 10px
+}
+
+.business>.business-downArrow {
+    position: absolute;
+    right: 0;
+    font-size: 10px;
+}
+
+.business-close {
+    position: absolute;
+    right: 35px;
+    font-size: 8px;
+    bottom: -30px;
+    display: none;
+}
+
+.business-close:hover {
+    cursor: pointer;
+}
+
+.left-field-common>.left-field-inner-common {
+    position: absolute;
+    top: 22px;
+    color: #627DAE;
+    font-size: 15px;
+}
+
+/**********************************meta-field-right-block ********************************/
+
+.meta-field-right-block {
+    width: 49%;
+    height: 300px;
+    overflow: auto;
+    overflow-x: hidden;
+    float: right;
+    position: relative;
+}
+
+.upload {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.meta-upload-label {
+    display: inline-block;
+}
+
+.meta-upload {
+    width: 25px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.right-field-common {
+    width: 99%;
+    position: relative;
+    padding-top: 20px;
+    margin: 20px 0px;
+}
+
+.right-field-common>input {
+    width: 100%;
+    position: absolute;
+    bottom: left;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #627DAE;
+}
+
+.right-field-common>.right-field-inner-common {
+    position: absolute;
+    top: 22px;
+    color: #627DAE;
+}
+
+.right-dro-com>.right-dro-com-type {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 200px;
+    border: 1px solid grey;
+    border-top: none;
+    overflow: auto;
+    overflow-x: hidden;
+    top: 43px;
+    z-index: 1;
+}
+
+.right-dro-com>.right-dro-com-type>.right-dro-com-options {
+    padding: 10px;
+}
+
+.right-dro-com>.right-dro-com-downArrow {
+    position: absolute;
+    right: 0;
+    font-size: 10px;
+}
+
+.type2-close {
+    position: absolute;
+    right: 35px;
+    font-size: 8px;
+    top: 109px;
+    display: none;
+    z-index: 1;
+}
+
+.type2-close:hover {
+    cursor: pointer;
+}
+
+.domain-close {
+    position: absolute;
+    right: 35px;
+    font-size: 8px;
+    top: 150px;
+    display: none;
+    z-index: 1;
+}
+
+.domain-close:hover {
+    cursor: pointer;
+}
+
+.subDomain-close {
+    position: absolute;
+    right: 35px;
+    font-size: 8px;
+    top: 109px;
+    display: none;
+    z-index: 1;
+}
+
+.subDomain-close:hover {
+    cursor: pointer;
+}

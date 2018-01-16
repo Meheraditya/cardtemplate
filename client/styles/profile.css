@@ -1,0 +1,334 @@
+.department {
+    color: #EF4647;
+    border-bottom: 1px solid #EDECEC;
+}
+
+.depart-head {
+    padding: 13px 0;
+    font-size: 20px;
+    text-align: left;
+    display: inline-block;
+}
+
+.depart-button {
+    width: 50px;
+    height: 50px;
+    background-color: #EF4647;
+    border-radius: 100%;
+    float: right;
+    text-align: center;
+}
+
+.depart-button>span {
+    color: white;
+    line-height: 2.5;
+    font-size: 20px;
+}
+
+.depart-form-div {
+    width: 48%;
+    display: inline-block;
+    float: left;
+    margin-right: 2%;
+    height: 200px;
+    overflow: auto;
+}
+
+.depart-form {
+    width: 98%;
+}
+
+.depart-form-field {
+    border-bottom: 1px solid blue;
+    padding: 20px 10px 0 0;
+    color: #5E5E5E;
+    margin-top: 5px;
+}
+
+.depart-in-name {
+    font-size: 15px;
+}
+
+.display-in-name {
+    font-size: 15px;
+}
+
+.about-textarea {
+    font-size: 15px;
+}
+
+.depart-form-field>input {
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: #5E5E5E;
+    width: 100%;
+    margin-top: -22px;
+    display: inherit;
+    padding-top: 5px;
+}
+
+.depart-form-field>textarea {
+    border: none;
+    outline: none;
+    font-size: 15px;
+    width: 100%;
+    overflow-y: hidden;
+    width: 100%;
+    margin-top: -18px;
+    display: inherit;
+}
+
+.depart-switch-field {
+    border: none;
+}
+
+.switch-div {
+    position: relative;
+}
+
+.status-switch-label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+.status-switch {
+    left: 45px;
+}
+
+/********************************************* switch ************************************************/
+.switch-div .checkbox{
+    display:none; 
+    right: 0;
+    position: absolute;
+}
+.switch
+{
+    width: 62px;
+    height: 32px;
+    background: #E5E5E5;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    appearance: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    border-radius:16px; 
+    -moz-border-radius:16px; 
+    -webkit-border-radius:16px; 
+}
+.switch:before
+{
+    content: ' ';
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    width: 60px;
+    height: 30px;
+    background: #FFFFFF;
+    z-index: 1;
+    border-radius:16px; 
+    -moz-border-radius:16px;
+    -webkit-border-radius:16px; 
+}
+.switch:after 
+{
+    content: ' ';
+    height: 29px;
+    width: 29px;
+    border-radius: 28px;
+    background: #FFFFFF;
+    position: absolute;
+    z-index: 2;
+    top: 1px;
+    left: 1px;
+    -webkit-transition-duration: 300ms;
+    transition-duration: 300ms;
+    -webkit-box-shadow: 0 2px 5px #999999;
+    box-shadow: 0 2px 5px #999999;
+}
+.switchOn , .switchOn:before {
+    background: #4cd964 !important;
+}
+.switchOn:after {
+    left: 32px !important;
+}
+
+/*****************************************assign-head-block**********************************************/
+
+.assign-block {
+    width: 48%;
+    height: 400px;
+    margin-top: 20px;
+    display: inline-block;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.assign-head-block {
+    background-color: #4565A0;
+    color: white;
+    position: relative;
+    height: 40px;
+    padding: 0 10px;
+    width: 97.3%;
+}
+
+.assign-head-block:before {
+    left: 0px;
+    content: '';
+    position: absolute;
+    display: block;
+    border-width: 0px 15px 12px 0px;
+    border-style: solid;
+    border-color: transparent #334361;
+    top: 38px;
+  }
+
+  .assign-head {
+      display: inline-block;
+      padding: 10px;
+  }
+
+  .assign-head-add {
+    width: 30px;
+    border: 1px solid;
+    display: inline-block;
+    border-radius: 100%;
+    height: 30px;
+    float: right;
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  .assign-head-add>span {
+    font-size: 30px;
+    line-height: 1;
+  }
+
+/********************************************assign-form-block*******************************/
+
+.assign-form {
+    position: relative;
+    border: 1px solid #EDECEC;
+}
+
+.assign-form-block {
+    width: 95%;
+    margin-left: 15px;
+}
+
+.assign-select-in {
+    width: 100%;
+    border: none;
+    padding: 20px 0 0;
+    outline: none;
+    position: relative;
+    border-bottom: 1px solid blue;
+}
+
+.select-common {
+    margin: 15px 10px 0;
+    position: relative;      
+}
+
+.select-common>div {
+    position: absolute;
+    margin-top: -30px;
+}
+
+.email {
+    margin-top: 30px;
+}
+
+.email-in{
+    position: relative;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid blue;
+}
+
+.email-label {
+    margin-top: -25px !important;
+}
+
+.cb-email-div {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 288px;
+}
+
+.cb-email-div>input {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    right: 62px;
+}
+
+.cb-email-div>div {
+    display: inline-block;
+    margin-top: 0px;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+}
+
+.assign-field-color {
+    color: #5E5E5E;
+}
+
+.assign-switch-div {
+    margin: 30px 10px 0;
+}
+
+.assign-switch {
+    position: relative;
+}
+
+.assign-status {
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+.data-switch {
+    left: 45px;
+    display: inline-block;
+}
+
+.assign-switch>input {
+    position: absolute;
+    right: 0;
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: white; 
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #4565A0;
+    width:5px;
+}
+
+::-webkit-scrollbar-corner {
+    border-radius: 100%;
+}

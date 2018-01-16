@@ -1,0 +1,181 @@
+<template name="metaData">
+    <div class="meta-data-block">
+        <div class="meta-header-block">
+            <div class="meta-head">Meta Data Details</div>
+            <div class="meta-button">
+                <span><b>B</b></span>
+            </div>
+        </div>
+        <div class="meta-logo-block">
+            <div class="logo-common-block info-block">
+                <div class="logo-info logo-common">                
+                    <div class="logo-symbol">i</div>
+                    <div class="logo-title">Info</div>                
+                </div>
+                <div class="logo-border"></div>
+            </div>
+            <div class="logo-common-block addi-info-block">
+                <div class="logo-border"></div>
+                <div class="logo-additional-info logo-common">                
+                    <div class="logo-symbol">
+                        <span>i<sup>+</sup></span>
+                    </div>
+                    <div class="logo-title">Additional Info</div>                
+                </div>
+                <div class="logo-border"></div>
+            </div>
+            <div class="logo-common-block philosophy-block">
+                <div class="logo-border"></div>
+                <div class="Philosophy logo-common">                
+                    <div class="logo-symbol">
+                        <span>Phy</span>
+                    </div>
+                    <div class="logo-title">Phylosophy</div>                
+                </div>
+                <div class="logo-border"></div>               
+            </div>
+            <div class="logo-common-block presence-block">
+                <div class="logo-border"></div>
+                <div class="presence logo-common">                
+                    <div class="logo-symbol">
+                        <span>Pre</span>
+                    </div>
+                    <div class="logo-title">Presence</div>                
+                </div>
+            </div>
+        </div>
+        <div class="meta-field-main-block">
+            <div class="meta-field-left-block">
+                <div class="group left-field-common">
+                    <input type="text" name="groupName" class="group-name-in"/>
+                    <div class="group-name left-field-inner-common">Group Name</div>
+                </div>
+                <div class="meta-display left-field-common">
+                    <input type="text" name="metaDisplayName" class="meta-display-name-in"/>
+                    <div class="meta-display-name left-field-inner-common">Display Name</div>
+                </div>
+                <div class="reg-no left-field-common">
+                    <input type="text" name="regNo" class="reg-no-in"/>
+                    <div class="reg-no-div left-field-inner-common">Registation No</div>
+                </div>
+                <div class="reg-date left-field-common date" id='datetimepicker1'>
+                    <input type="text" name="regDate" class="reg-date-in" placeholder="Registration Date"/>
+                    <div class="reg-date-div left-field-inner-common"></div>
+                    <div class="calender"><span class="glyphicon glyphicon-calendar"></span></div>
+                </div>
+                <div class="meta-email left-field-common">
+                    <input type="email" name="metaEmail" class="meta-email-in"/>
+                    <div class="meta-email-div left-field-inner-common">Email</div>
+                </div>
+                <div class="phone left-field-common">
+                    <input type="number" name="phone" class="phone-in"/>
+                    <div class="phone-div left-field-inner-common">Phone</div>
+                </div>
+                <div class="url left-field-common">
+                    <input type="text" name="url" class="url-in"/>
+                    <div class="url-div left-field-inner-common">Group Url</div>
+                </div>
+                <div class="business left-field-common">
+                    <input class="business-in" type="text" name="business" value=""/>
+                    <div class="business-type">
+                        <div class="business-options">Business Type</div>
+                        <div class="business-options">Type1</div>
+                        <div class="business-options">Type2</div>
+                        <div class="business-options">Type3</div>
+                        <div class="business-options">Type4</div>
+                        <div class="business-options">Type5</div>
+                        <div class="business-options">Type6</div>
+                        <div class="business-options">Type7</div>
+                        <div class="business-options">Type8</div>
+                        <div class="business-options">Type9</div>
+                        <div class="business-options">Type10</div>
+                    </div>
+                    <div class="business-div left-field-inner-common">Select BusinessType</div>                    
+                    <span class="business-downArrow">&#x25BC;</span>
+                </div>
+                <div class="business-close">&#x2715;</div>
+            </div>
+            <div class="meta-field-right-block">
+                <div class="upload">
+                    <div class="meta-upload-label">Upload Logo: </div>
+                    <div class="meta-upload"> 
+                        <img src="upload.png" width="100%" height="100%"/>
+                    </div>                    
+                </div>
+                <div class="certification right-field-common">
+                    <input type="text" name="certificationName" class="certification-name-in"/>
+                    <div class="certification-name right-field-inner-common">Certification Name</div>
+                </div>
+                <div class="type2 right-field-common right-dro-com">
+                    <input class="type2-in right-dro-com-in" type="text" name="type2" value=""/>
+                    <div class="type2-type right-dro-com-type">
+                        <div class="type2-options right-dro-com-options">type 2</div>
+                        <div class="type2-options right-dro-com-options">Type1</div>
+                        <div class="type2-options right-dro-com-options">Type2</div>
+                        <div class="type2-options right-dro-com-options">Type3</div>
+                        <div class="type2-options right-dro-com-options">Type4</div>
+                        <div class="type2-options right-dro-com-options">Type5</div>
+                        <div class="type2-options right-dro-com-options">Type6</div>
+                        <div class="type2-options right-dro-com-options">Type7</div>
+                        <div class="type2-options right-dro-com-options">Type8</div>
+                        <div class="type2-options right-dro-com-options">Type9</div>
+                        <div class="type2-options right-dro-com-options">Type10</div>
+                    </div>
+                    <div class="type2-div right-field-inner-common right-dro-com-div">Select type2</div>                    
+                    <span class="type2-downArrow right-dro-com-downArrow">&#x25BC;</span>
+                </div>
+                <div class="type2-close">&#x2715;</div>
+                <div class="domain right-field-common right-dro-com">
+                    <input class="domain-in right-dro-com-in" type="text" name="domain" value=""/>
+                    <div class="domain-type right-dro-com-type">
+                        <div class="domain-options right-dro-com-options">type 2</div>
+                        <div class="domain-options right-dro-com-options">Type1</div>
+                        <div class="domain-options right-dro-com-options">Type2</div>
+                        <div class="domain-options right-dro-com-options">Type3</div>
+                        <div class="domain-options right-dro-com-options">Type4</div>
+                        <div class="domain-options right-dro-com-options">Type5</div>
+                        <div class="domain-options right-dro-com-options">Type6</div>
+                        <div class="domain-options right-dro-com-options">Type7</div>
+                        <div class="domain-options right-dro-com-options">Type8</div>
+                        <div class="domain-options right-dro-com-options">Type9</div>
+                        <div class="domain-options right-dro-com-options">Type10</div>
+                    </div>
+                    <div class="domain-div right-field-inner-common right-dro-com-div">Select domain</div>                    
+                    <span class="domain-downArrow right-dro-com-downArrow">&#x25BC;</span>
+                </div>
+                <div class="domain-close">&#x2715;</div>
+                <div class="subDomain right-field-common right-dro-com">
+                    <input class="subDomain-in right-dro-com-in" type="text" name="subDomain" value=""/>
+                    <div class="subDomain-type right-dro-com-type">
+                        <div class="subDomain-options right-dro-com-options">type 2</div>
+                        <div class="subDomain-options right-dro-com-options">Type1</div>
+                        <div class="subDomain-options right-dro-com-options">Type2</div>
+                        <div class="subDomain-options right-dro-com-options">Type3</div>
+                        <div class="subDomain-options right-dro-com-options">Type4</div>
+                        <div class="subDomain-options right-dro-com-options">Type5</div>
+                        <div class="subDomain-options right-dro-com-options">Type6</div>
+                        <div class="subDomain-options right-dro-com-options">Type7</div>
+                        <div class="subDomain-options right-dro-com-options">Type8</div>
+                        <div class="subDomain-options right-dro-com-options">Type9</div>
+                        <div class="subDomain-options right-dro-com-options">Type10</div>
+                    </div>
+                    <div class="subDomain-div right-field-inner-common right-dro-com-div">Select SubDomain</div>                    
+                    <span class="subDomain-downArrow right-dro-com-downArrow">&#x25BC;</span>
+                </div>
+                <div class="subDomain-close">&#x2715;</div>
+                <div class="meta-groupHeadName right-field-common">
+                    <input type="text" name="groupHeadName" class="groupHeadName-in"/>
+                    <div class="groupHeadName-div right-field-inner-common">Grouphead Name</div>
+                </div>
+                <div class="meta-groupSize right-field-common">
+                    <input type="text" name="groupSize" class="groupSize-in"/>
+                    <div class="groupSize-div right-field-inner-common">groupSize</div>
+                </div>
+                <div class="meta-totalNoOfManagement right-field-common">
+                    <input type="text" name="totalNoOfManagement" class="totalNoOfManagement-in"/>
+                    <div class="totalNoOfManagement-div right-field-inner-common">Total Number Of Management</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

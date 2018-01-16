@@ -1,0 +1,16 @@
+<head>
+    <title>cardtemplate</title>   
+</head>
+<body>        
+</body>
+<template name="mainLayout">
+    <div class="parent-layout">
+        <div class="main-container">
+            {{> containerTemplate}}
+        </div>   
+    </div>
+</template>
+
+<template name="containerTemplate">
+    {{>yield}}
+</template>
