@@ -1,7 +1,9 @@
 /* CSS declarations go here */
 
 html,
-body {}
+body {
+    overflow: hidden;
+}
 
 .card {
     width: 32%;
@@ -35,10 +37,10 @@ body {}
 }
 
 .logo {
-    width: 70px;
+    width: 60px;
     height: 60px;
-    padding-left: 12px;
-    padding-top: 25px;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
 .logo-head {

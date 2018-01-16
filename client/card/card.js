@@ -80,6 +80,14 @@ Meteor.startup(function () {
                 $(".card6").mouseout(function(){
                     $('.card6').css(removeCss());
                 });
+
+                $('.card1').on('click', function(){
+                    window.location.replace("http://localhost:3000/metadata");
+                });
+
+                $('.card2').on('click', function(){
+                    window.location.replace("http://localhost:3000/profile");
+                });
             }
         });
     }
