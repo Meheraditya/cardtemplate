@@ -58,7 +58,7 @@ Meteor.startup(function () {
                     getDisplayNameVal =  getDisplayNameInput.val();
                     getAboutVal =  getAboutInput.val();
                     
-                    console.log('getAboutVal', getAboutVal.length);
+                    //console.log('getAboutVal', getAboutVal.length);
                     $(this).css({'border-bottom': '2px solid #EF4647'});
                     $('.depart-in-name').css(addPofileDepartmentCss());                                      
                     $('.display-name, .about').css({'border-bottom': '1px solid blue'});
@@ -233,7 +233,7 @@ Meteor.startup(function () {
             }
 
             function checkInputAndRemoveCss(inputVal, className) {
-                if(inputVal && inputVal.length == 0) {
+                if(inputVal == '') {
                     $(className).css(removePofileDepartmentCss());
                 }
             }
