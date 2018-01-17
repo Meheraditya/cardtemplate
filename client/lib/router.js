@@ -13,3 +13,8 @@ Router.route('/metadata', {
     layoutTemplate: "mainLayout"
 });
 
+Router.route('/chat', {
+    name: "chat",
+    layoutTemplate: "mainLayout"
+});
+
