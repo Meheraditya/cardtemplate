@@ -14,7 +14,7 @@ Meteor.startup(function () {
             }
 
             function baseFn() {
-                
+
                 $('.meta-button').on('mouseover', function(){
                     $('.meta-button').css('transform', 'scale(1.1, 1.1)');
                 });
@@ -350,7 +350,7 @@ Meteor.startup(function () {
                     'transition-duration': '1s',
                     'color': '#8091A5',
                     'font-size': '12px'
-                }
+                };
             }
 
             function removeInputTransform() {
@@ -361,7 +361,7 @@ Meteor.startup(function () {
                     'transition-duration': '1s',
                     'color': '#627DAE',
                     'font-size': '15px'
-                }
+                };
             }
 
             function checkInputAndRemoveTransform(inputVal, className) {

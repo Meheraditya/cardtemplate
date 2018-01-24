@@ -2,7 +2,8 @@
   "name": "cardtemplate",
   "private": true,
   "scripts": {
-    "start": "meteor run"
+    "start": "meteor run",
+    "test": "./node_modules/.bin/eslint client/*/*.js --fix"
   },
   "dependencies": {
     "babel-runtime": "^6.26.0",
@@ -10,5 +11,9 @@
     "bootstrap-datepicker": "^1.7.1",
     "jquery": "^3.2.1",
     "meteor-node-stubs": "^0.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^4.16.0",
+    "eslint-plugin-react": "^7.5.1"
   }
 }

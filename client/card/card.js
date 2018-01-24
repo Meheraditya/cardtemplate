@@ -33,7 +33,7 @@ Meteor.startup(function () {
                         'box-shadow': '10px 10px 10px gainsboro',
                         "transform": "translate(0,-3%)", 
                         "transition" :"transform 1s"
-                        }
+                        };
             }
 
             function removeCss() {
@@ -41,7 +41,7 @@ Meteor.startup(function () {
                     'box-shadow': '2px 2px 2px 1px gainsboro',
                     "transform": "translate(0%,0%)",
                     'transition' :'transform 1s'
-                }
+                };
             }
             function domCss(){
                 $(".card1").mouseover(function(){
