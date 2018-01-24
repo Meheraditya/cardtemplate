@@ -10,6 +10,7 @@ Meteor.startup(function(){
             baseFn();
 
             function baseFn() {
+                console.log('hi');
                 $(document).on("click", function(e) {
                     textareaLength();
                     var target = e.target.parentNode; //target div recorded
@@ -54,8 +55,10 @@ Meteor.startup(function(){
 
             function textareaLength() {
                 textareaVal = $('.textarea-in').val();
-                textareaVal = textareaVal.match(/\S+/g);
-                textareaVal ? textareaVal.join(' ') : '';
+                if(textareaVal !== undefined){
+                    textareaVal = textareaVal.match(/\S+/g);
+                    textareaVal ? textareaVal.join(' ') : '';
+                }
                 if(textareaVal == null) {
                     return false;
                 }                    

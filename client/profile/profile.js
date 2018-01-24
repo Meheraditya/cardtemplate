@@ -246,7 +246,7 @@ Meteor.startup(function () {
                     'transition-duration': '1s',
                     'color': '#8091A5',
                     'font-size': '12px'
-                }
+                };
             }
 
             function removePofileDepartmentCss() {
@@ -257,7 +257,7 @@ Meteor.startup(function () {
                     'transition-duration': '1s',
                     'color': '#5E5E5E',
                     'font-size': '15px'
-                }
+                };
             }           
         });
     }
