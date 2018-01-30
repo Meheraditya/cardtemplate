@@ -51,6 +51,13 @@ Meteor.startup(function(){
                         return false;
                     }
                 });
+
+                $('.chat-btn-outer').on('mouseover', function(){
+                    $(this).css('background-color', '#EF4647');
+                });
+                $('.chat-btn-outer').on('mouseout', function(){
+                    $(this).css('background-color', 'blue');
+                });
             }
 
             function textareaLength() {
