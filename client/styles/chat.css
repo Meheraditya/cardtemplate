@@ -15,6 +15,7 @@
     background-color: blue;
     border-radius: 50px;
     top: 100px;
+    z-index: 1;
 }
 
 .chat-btn-inner {
@@ -26,6 +27,18 @@
 .chat-btn-inner>img {
     width: 20px;
     height: 20px;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes example {
+    0%   {transform: rotate(0deg); transition: transform 1s}
+    25%  {transform: rotate(100deg); transition: transform 1s}
+    50%  {transform: rotate(200deg); transition: transform 1s}
+    75%  {transform: rotate(300deg); transition: transform 1s}
+    100% {transform: rotate(350deg); transition: transform 1s}
 }
 
 .invert {
@@ -37,6 +50,8 @@
     margin-left: -334px;
     background-color: #DDE4E4;
     width: 333px;
+    z-index: 1;
+    position: relative;
 }
 
 .chatbox-header {
@@ -223,4 +238,151 @@
 .comment-inner-image {
     width: 45px;
     height: 45px;
+}
+
+/*****************************chat conversion*******************/
+
+.ch-conv-main {
+    width: 1200px;
+    padding: 20px;
+    position: relative;
+}
+
+.main-divider:after {
+    content: '';
+    position: absolute;
+    border: 1px solid #F04847;
+    height: calc(100% - 40px);
+    left: 140px;
+    z-index: -2;
+    top: 32px;
+}
+
+.ch-conv-parent {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+}
+
+.ch-conv-parent:last-child:after {
+    content: '';
+    position: absolute;
+    border: 4px solid #F04847;
+    left: 137px;
+    bottom: 0;
+    border-radius: 50%;
+    z-index: -1;
+ }
+
+.ch-conv-user {
+    width: 20%;
+}
+
+.ch-conv-parent-user-ul {
+    list-style: none;
+    position: relative;    
+    margin-left: 60px;
+}
+
+.ch-conv-parent-user-ul>li {
+    width: 75px;
+    height: 75px;
+    border: 2px solid #F04847;
+    border-radius: 3px;
+    position: relative;
+}
+
+.ch-conv-parent-user-ul>li:after {
+    content: '';
+    position: absolute;
+    border-width: 10px 0 10px 10px;
+    border-style: solid;
+    border-color: transparent #F04847;
+    top: 4px;
+}
+
+.ch-conv-msg {
+    width: 90%;
+    background-color: #4565A0;
+    color: white;
+    border-radius: 5px;
+}
+
+.ch-conv-msg-head {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 5px;
+}
+
+.ch-conv-divider {
+    border-top: 1px solid white;
+}
+
+.msg-head-datTime {
+    background-color: white;
+    color: #8298BF;
+    border-radius: 5px;
+    padding: 0 5px;
+    font-size: 12px;
+    height: 15px;    
+}
+
+.ch-conv-msg-body {
+    padding: 5px 20px 5px;
+}
+
+/**************child****************/
+
+.ch-conv-child {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+}
+
+.ch-conv-user-child {
+    width: 25%;
+}
+
+.ch-conv-child-user-ul {
+    list-style: none;
+    position: relative;    
+    margin-left: 160px;
+}
+
+.ch-conv-child-user-ul:before {
+    content: '';
+    position: absolute;
+    width: 86%;
+    display: block;
+    border: 1px solid #F04847;
+    left: -23px;
+    top: 25px;
+}
+
+.ch-conv-child-user-ul>li {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #F04847;
+    border-radius: 3px;
+    position: relative;
+}
+
+.ch-conv-child-user-ul>li:after {
+    content: '';
+    position: absolute;
+    border-width: 7px 0 7px 7px;
+    border-style: solid;
+    border-color: transparent #F04847;
+    top: 4px;
+}
+
+.ch-conv-child-msg {
+    width: 75%;
+    background-color: #BAD2FF;
+    color: #5B6C87;
+    border-radius: 5px;
+}
+
+.child-datTime-color {
+    color: #939393;
 }
