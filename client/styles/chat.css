@@ -258,12 +258,6 @@
     top: 32px;
 }
 
-.ch-conv-parent {
-    width: 100%;
-    display: flex;
-    margin-top: 10px;
-}
-
 .main-divider:after {
     content: '';
     position: absolute;
@@ -273,6 +267,12 @@
     border-radius: 50%;
     z-index: -1;
  }
+
+.ch-conv-parent {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+}
 
 .ch-conv-user {
     width: 20%;
