@@ -6,7 +6,8 @@ Template.menu.onRendered(function () {
             count = 0;
             menuSlide();
             addMenuActiveColor();
-            createTooltip();  
+            createTooltip();            
+            selectMenu();            
         }            
 
         function menuSlide() {
@@ -42,6 +43,19 @@ Template.menu.onRendered(function () {
                 $(this).addClass('active-item-color');
                 $(this).find('a').append('<div class="active-item"></div>');
             });
+        }
+
+        function selectMenu() {
+            var url = window.location.pathname;  // gets url pathname
+            url = url.replace(/[^a-zA-Z 0-9]+/g, '');  // removes farward slash(/) in url
+            if(url != '') {
+                var $dataTooltip = $('[data-url='+url+']');
+                $('.menu-item-block').removeClass('active-item-color');
+                $('.active-item').remove();
+
+                $dataTooltip.parents('.menu-item-block').addClass('active-item-color');
+                $dataTooltip.parent('a').append('<div class="active-item"></div>');
+            }
         }
     });
 });
