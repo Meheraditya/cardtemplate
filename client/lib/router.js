@@ -18,3 +18,7 @@ Router.route('/chat', {
     layoutTemplate: "mainLayout"
 });
 
+Router.route('/menu', {
+    name: "menu",
+    layoutTemplate: "mainLayout"
+});
