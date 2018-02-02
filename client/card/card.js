@@ -4,6 +4,7 @@ Template.Card.onRendered(function(){
         function init() {
             domCss();
         }
+
         function addCss() {
             return {
                     'box-shadow': '10px 10px 10px gainsboro',
@@ -19,6 +20,7 @@ Template.Card.onRendered(function(){
                 'transition' :'transform 1s'
             };
         }
+
         function domCss(){
             $(".card1").mouseover(function(){
                 $('.card1').css(addCss());
@@ -77,7 +79,14 @@ Template.Card.onRendered(function(){
                 window.location.replace("http://localhost:3000/menu");
             });
         }
+
+        // Template.Card.events({
+        //     'mouseover .card1': function () {
+        //         $('.card1').css(addCss());
+        //     },
+        //     'mouseout .card1': function () {
+        //         $('.card1').css(removeCss());
+        //     }       
+        // });
     });
 });
-
-

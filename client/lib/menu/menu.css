@@ -82,11 +82,12 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    margin-left: 5px;
 }
 
 .menu-items {
     width: 60px;
-    height: 550px;
+    height: 100%;
     position: fixed;
     margin-top: 5px;
     background-color: #43639C;
@@ -198,4 +199,35 @@
     align-items: center;
     background-color: #EF4647;
     z-index: 1;
+    color:white;
+}
+
+.footer-social-icons {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+}
+
+.footer-social-icons >span:hover {
+    color: #F9DB00;
+}
+
+.footer-social-icon-google {
+    position: absolute;
+    right: 95px;
+}
+
+.footer-social-icon-facebook {
+    position: absolute;
+    right: 75px;
+}
+
+.footer-social-icon-twitter {
+    position: absolute;
+    right: 50px;
+}
+
+.footer-social-icon-linkedin {
+    position: absolute;
+    right: 25px;
 }

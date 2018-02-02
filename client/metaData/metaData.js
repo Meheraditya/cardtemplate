@@ -28,6 +28,7 @@ Template.metaData.onRendered(function(){
                 removeColor('.Philosophy', '.philosophy-block');
                 removeColor('.presence', '.presence-block');
             });
+            $('.info-block').trigger('click');
 
             $('.addi-info-block').on('click', function()  {
                 removeColor('.logo-info', '.info-block');

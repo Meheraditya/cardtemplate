@@ -1,10 +1,10 @@
 .department {
     color: #EF4647;
-    border-bottom: 1px solid #EDECEC;
+    border-bottom: 2px solid #EDECEC;
 }
 
 .depart-head {
-    padding: 13px 0;
+    padding: 12px 0;
     font-size: 20px;
     text-align: left;
     display: inline-block;
