@@ -85,9 +85,9 @@ Template.chat.events({
         }
     },
     'mouseover .chat-btn-outer': ()=> {
-        $(this).css('background-color', '#EF4647');
+        $('.chat-btn-outer').css('background-color', '#EF4647');
     },
     'mouseout .chat-btn-outer': ()=> {
-        $(this).css('background-color', 'blue');
+        $('.chat-btn-outer').css('background-color', 'blue');
     }
 });

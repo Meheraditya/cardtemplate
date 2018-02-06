@@ -69,27 +69,31 @@
     width: 200px;
     direction: ltr;
     position: fixed;
-    margin-top: 10px;
+    margin-top: -49px;
     z-index: 1;
 }
 
 .menu-btn {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     border: 2px solid #EF4747;
     border-radius: 50%;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     margin-left: 5px;
 }
 
+.menu-border {
+    border: 2px solid #F9DB00;
+}
+
 .menu-items {
     width: 60px;
     height: 100%;
     position: fixed;
-    margin-top: 5px;
+    /* margin-top: 5px; */
     background-color: #43639C;
     color: white;
 }
@@ -186,7 +190,7 @@
     height: 500px; 
     overflow: auto;
     overflow-x: hidden;
-    margin: 15px 5px 15px 70px;
+    margin: 0 5px 15px 70px;
 }
 
 .footer {

@@ -52,7 +52,7 @@ Template.Card.events({
         window.location.replace("http://localhost:3000/metadata");
     },
     'mouseover .card5': () => {
-        $('.card4').css(addCss());
+        $('.card5').css(addCss());
     },
     'mouseout .card5': () => {
         $('.card5').css(removeCss());
