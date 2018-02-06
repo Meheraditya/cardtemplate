@@ -3,6 +3,7 @@ Template.profile.onRendered(function(){
         getDepartNameVal = '';
         getDisplayNameVal= '';
         getAboutVal= '';
+        menuAnimationClicked = 0;
 
         getDepartInput = $('input[name="departmentName"]');                   
         getDisplayNameInput = $('input[name="displayName"]');                   
@@ -60,7 +61,7 @@ function removePofileDepartmentCss() {
 
 Template.profile.events({
     'mouseover .depart-button': ()=> {
-        $('.depart-button').css('transform', 'scale(1.1, 1.1)');
+        $('.depart-button').css({'transform': 'scale(1.05, 1.05)','cursor':'pointer'});
     },
     'mouseout .depart-button': ()=> {
         $('.depart-button').css('transform', 'scale(1, 1)');
@@ -237,5 +238,17 @@ Template.profile.events({
         $('.select-group, .select-corporate, .select-company, .select-division, .select-branch')
         .css({'border-bottom': '1px solid blue'});
         $('.email-label').css(addPofileDepartmentCss());
+    },
+    'click .depart-button': ()=> {
+        if(menuAnimationClicked == 0) {
+            $('.hidden-depart-button').css('opacity', '1');            
+            $('.hidden-depart-button').animate({width: '300px'},'slow');
+            menuAnimationClicked++;
+        }else {            
+            $('.hidden-depart-button').animate({width: '0'},'slow',function(){
+                $('.hidden-depart-button').css('opacity', '0');
+            });
+            menuAnimationClicked--;
+        }        
     }
 });
