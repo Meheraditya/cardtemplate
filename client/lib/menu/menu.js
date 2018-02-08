@@ -47,5 +47,15 @@ Template.menu.events({
         $('.active-item').remove();
         $(e.currentTarget).addClass('active-item-color');
         $(e.currentTarget).find('a').append(StrToHtmlActiveItem[0]);
+    },
+    'click .search-icon': ()=> {
+        $('.search-in').focus();
+        $('.search').toggleClass('transform-search');
+        $('.search-div').toggleClass('search-input-div-transform');
+        $('.search-in').toggleClass('search-input-transform');
+    },
+    'click .user-profile-button': ()=> {
+        $('.user-profile-button').toggleClass('user-profile-button-active');
+        $('.user-profile-menu').toggleClass('user-profile-menu-active');
     }
 });
