@@ -2,7 +2,6 @@ Template.metaData.onRendered(function() {
 
     ////  counter variables
     hideDropDownCount = 0;
-    menuAnimationClicked = 0;
     var type2Count = 0;
     var domainCount = 0;
     var subDomainCount = 0;
@@ -234,12 +233,6 @@ function addDefaultColorToInfo() {
 }
 
 Template.metaData.events({
-    'mouseover .meta-button': ()=> {
-        $('.meta-button').css({'transform': 'scale(1.05, 1.05)','cursor':'pointer'});
-    },
-    'mouseout .meta-button': ()=> {
-        $('.meta-button').css('transform', 'scale(1, 1)');
-    },
     'click .info-block': ()=> {
         addDefaultColorToInfo();
     },
@@ -407,15 +400,6 @@ Template.metaData.events({
         checkInputAndRemoveTransform(groupSizeFn(), '.groupSize-div');
     },
     'click .meta-button': ()=> {
-        if(menuAnimationClicked == 0) {
-            $('.hidden-meta-button').css('opacity', '1');            
-            $('.hidden-meta-button').animate({width: '300px'},'slow');
-            menuAnimationClicked++;
-        }else {            
-            $('.hidden-meta-button').animate({width: '0'},'slow',function(){
-                $('.hidden-meta-button').css('opacity', '0');
-            });
-            menuAnimationClicked--;
-        }        
+        $('.hidden-meta-button').toggleClass('hidden-meta-button-active');
     }
 });

@@ -5,45 +5,46 @@
     color: #EF4647;
     border-bottom: 2px solid #EDECEC;
     height: 50px;
+    position: relative;
 }
 
 .meta-head {
-    /* padding: 12px 0; */
     font-size: 20px;
     text-align: left;
     display: inline-block;
 }
 
-.meta-menu {
-    display: flex;
-    height: 100%;
-    margin-right: 5px;
-}
+.meta-menu {}
 
 .hidden-meta-button {
-    opacity: 0;
     width: 0;
+    display: flex;
+    padding: 0 10px;
+    transition: width 1s;
+    float: right;
+    margin-right: 20px;
     background-color: #EBEBEB;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    margin-right: -20px;
     border-top: 3px solid lightgrey;
     border-bottom: 2px solid lightgrey;
     box-shadow: -5px -2px 10px -1px lightgrey;
-    display: flex;
-    padding: 0 10px;
+    overflow: hidden;
+}
+
+.hidden-meta-button-active {
+    width: 100%;
 }
 
 .meta-menu-items {
     display: flex;
     padding: 0 5px;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
-.meta-menu-items>span:last-child {
-    font-size: 12px;
+.meta-menu-items > p {
+    margin: 0;
 }
 
 .meta-button {
@@ -51,8 +52,16 @@
     height: 100%;
     background-color: #EF4647;
     border-radius: 100%;
-    float: right;
     text-align: center;
+    z-index: 999;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.meta-button:hover {
+    transform: scale(1.05, 1.05);
+    cursor: pointer;
 }
 
 .meta-button>span {
