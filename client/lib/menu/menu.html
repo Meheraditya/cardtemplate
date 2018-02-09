@@ -1,8 +1,30 @@
 <template name="menu">
     <div class="header fluid-container">
         <div class="header-border-top"></div>
-        <div class="header-logo">
-            <div class="header-logo-content">
+        <div class="hcm-header">
+            <div class="header-main-left-content">
+                <div class="header-left">
+                    <div class="header-left-logo-content">
+                        <div class="header-left-logo">
+                            <span class="header-left-hcm">hcm</span>
+                            <span class="header-left-sprint">Sprint</span>
+                        </div>
+                        <div class="subheader-left-logo">
+                            <span class="subheader-left-culture">culture.</span>
+                            <span class="subheader-left-camaraderie">camaraderie.</span>
+                            <span class="subheader-left-competence">competence.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-left-menu">
+                    <ul>
+                        <li class="header-left-menu-dashboard">Dashboard</li>
+                        <li class="header-left-menu-info">Info</li>
+                        <li class="header-left-menu-org">OrgChart</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-middile-logo-content">
                 <div class="main-header-logo">
                     <span class="header-hcm">hcm</span>
                     <span class="header-sprint">Sprint</span>
@@ -13,11 +35,65 @@
                     <span class="subheader-competence">competence.</span>
                 </div>
             </div>
+            <div class="header-main-right-content">
+                <div class="search-block">
+                    <div class="search-btn">
+                        <i class="search-icon fa fa-search fa-lg"></i>
+                    </div>
+                    <div class="hcm-search-input">
+                        <input type="text" class="form-control" id="usr">
+                    </div>
+                </div>
+                <div class="user-profile">
+                    <div class="user-profile-logo">
+                        <img src="user.jpg" width="100%" height="100%"/>
+                        <span class="user-profile-button">...</span>
+                    </div>
+                    <div class="user-profile-name">Hi, Meher</div>
+                    <ul class="user-profile-menu">
+                        <li>
+                            <div class="">
+                                <span>My Profile</span>
+                                <span><i class="fa fa-user"></i></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="">
+                                <span>Log As</span>
+                                <span><i class="fa fa-sign-in"></i></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="">
+                                <span>Switch Profile</span>
+                                <span><i class="fa fa-exchange"></i></span>
+                            </div>                           
+                        </li>
+                        <li>
+                            <div class="">
+                                <span>Logout</span>
+                                <span><i class="fa fa-sign-out"></i></span>
+                            </div> 
+                        </li>
+                        <li>
+                            <div class="">
+                                <span>Last Login</span>
+                                <span><i class="fa fa-lastfm"></i></span>
+                            </div> 
+                        </li>
+                    </ul>
+                </div>
+                <div class="notification">
+                    <div class="notification-count"><span>25</span></div>
+                    <div class="notification-bell"><i class="fa fa-bell"></i></div>
+                </div>
+            </div>
         </div>
         <div class="header-border-bottom"></div>
     </div>
     <div class="menu">
         <div class="menu-btn"><i class="fa fa-road fa-2x" aria-hidden="true"></i></div>
+        <div class="menu-border"></div>
         <div class="menu-items">
             <div class="menu-item-block active-item-color">
                 <a href="http://localhost:3000/">

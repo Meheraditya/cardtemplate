@@ -1,6 +1,11 @@
 .department {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     color: #EF4647;
     border-bottom: 2px solid #EDECEC;
+    position: relative;
 }
 
 .depart-head {
@@ -10,13 +15,54 @@
     display: inline-block;
 }
 
+.depart-menu {}
+
+.hidden-depart-button {
+    width: 0;
+    display: flex;
+    padding: 0 10px;
+    transition: width 1s;
+    float: right;
+    margin-right: 20px;
+    background-color: #EBEBEB;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top: 3px solid lightgrey;
+    border-bottom: 2px solid lightgrey;
+    box-shadow: -5px -2px 10px -1px lightgrey;
+    overflow: hidden;
+}
+
+.hidden-depart-button-active {
+    width: 100%;
+}
+
+.depart-menu-items {
+    display: flex;
+    padding: 0 5px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.depart-menu-items > p {
+    margin: 0;
+}
+
 .depart-button {
     width: 50px;
-    height: 50px;
+    height: 100%;
     background-color: #EF4647;
     border-radius: 100%;
-    float: right;
     text-align: center;
+    z-index: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.depart-button:hover {
+    transform: scale(1.05, 1.05);
+    cursor: pointer;
 }
 
 .depart-button>span {
