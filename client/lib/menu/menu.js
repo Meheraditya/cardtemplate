@@ -2,11 +2,12 @@ Template.menu.onRendered(function () {
 
     init();
     function init() {
-        count = 0;       
+        count = 0;
         baseFn();            
     }            
 
-    function baseFn() {
+    function baseFn() {   
+        $('.user-profile-menu').hide();  //By Default hide the user profile  
         var url = window.location.pathname;  // gets url pathname
         url = url.replace(/[^a-zA-Z 0-9]+/g, '');  // removes farward slash(/) in url
         if(url != '') {
@@ -49,13 +50,11 @@ Template.menu.events({
         $(e.currentTarget).find('a').append(StrToHtmlActiveItem[0]);
     },
     'click .search-icon': ()=> {
-        $('.search-in').focus();
-        $('.search').toggleClass('transform-search');
-        $('.search-div').toggleClass('search-input-div-transform');
-        $('.search-in').toggleClass('search-input-transform');
+        // $('.hcm-search-input>input').focus();
+        $('.search-block').toggleClass('search-block-open');
     },
     'click .user-profile-button': ()=> {
         $('.user-profile-button').toggleClass('user-profile-button-active');
-        $('.user-profile-menu').toggleClass('user-profile-menu-active');
+        $('.user-profile-menu').slideToggle('slow','linear');
     }
 });
