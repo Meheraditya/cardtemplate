@@ -10,7 +10,6 @@
 
 .chat-btn {
     position: relative;
-    z-index: 2;
     margin-left: -30px;
 }
 
@@ -21,7 +20,7 @@
     background-color: blue;
     border-radius: 50px;
     top: 100px;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 .chat-btn-inner {
@@ -252,6 +251,7 @@
     width: 1200px;
     padding: 20px;
     position: relative;
+    z-index: -1;
 }
 
 .main-divider:before {
