@@ -248,7 +248,7 @@
 /*****************************chat conversion*******************/
 
 .ch-conv-main {
-    width: 1200px;
+    width: 100%;
     padding: 20px;
     position: relative;
     z-index: -1;
@@ -358,7 +358,7 @@
 .ch-conv-child-user-ul:before {
     content: '';
     position: absolute;
-    width: 86%;
+    width: 50%;
     display: block;
     border: 1px solid #F04847;
     left: -23px;
