@@ -13,6 +13,16 @@ Router.route('/metadata', {
     layoutTemplate: "mainLayout"
 });
 
+Router.route('/rmDetails', {
+    name: "rmDetails",
+    layoutTemplate: "mainLayout"
+});
+
+Router.route('/messenger', {
+    name: "messenger",
+    layoutTemplate: "mainLayout"
+});
+
 Router.route('/chat', {
     name: "chat",
     layoutTemplate: "mainLayout"
