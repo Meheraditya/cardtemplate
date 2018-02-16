@@ -11,3 +11,5 @@ step1: git clone https://github.com/Meheraditya/hcm.git
 step2: meteor npm i -S
 
 step3: meteor --port 3005
+
+step4: http://localhost:3005/
